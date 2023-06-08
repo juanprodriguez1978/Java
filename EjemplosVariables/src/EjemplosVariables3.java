@@ -1,9 +1,13 @@
-public class EjemplosVariables2 {
+public class EjemplosVariables3 {
     public static void main(String[] args) {
-        int a = 10;
-        long b = 20;
-        byte c = 30;
-
-        System.out.println("La suma de los 3 numeros es igual a " + (a+b+c));
+        //UNICODE
+        char simbolo3 = '\u0026';
+        System.out.println(simbolo3);
+        //ASCII
+        char simbolo2 = 38;
+        System.out.println(simbolo2);
+        //car
+        char simbolo1 = '&';
+        System.out.println(simbolo1);
     }
 }
