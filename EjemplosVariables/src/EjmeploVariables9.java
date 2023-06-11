@@ -10,10 +10,23 @@ public class EjmeploVariables9 {
         System.out.println("*******************");
         String Saludo = "Hola, gracias por la informacion";
         String Nombre = "Pedro";
-        String SaludoPersonalizado = Saludo + "querido "+ Nombre;
+        String Nombre1 = "Abraham";
+        String SaludoPersonalizado = Saludo + " querido "+ Nombre;
         System.out.println(SaludoPersonalizado);
-        String SaludoPersonalizado2 = Saludo.concat("querido ").concat(Nombre);
+        String SaludoPersonalizado2 = Saludo.concat(" querido ").concat(Nombre);
         System.out.println(SaludoPersonalizado2);
+
+        //Transformamos el Saludo inicial, agregadole apreciado y el Nombre
+        Saludo = Saludo.transform(s -> {
+            return s + " apreciado " + Nombre;
+        });
+        System.out.println(Saludo);
+
+        //Para cambiar letras
+        Nombre1 = Nombre1.replace("a", "A");
+        System.out.println(Nombre1);
+        System.out.println("*******************");
+
 
 
 
